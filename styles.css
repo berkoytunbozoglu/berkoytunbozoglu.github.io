@@ -14,14 +14,21 @@ body {
 /* Profile photo */
 
 .hero-photo {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .hero-photo img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 600px) {
+  .hero-photo img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* Profile information */

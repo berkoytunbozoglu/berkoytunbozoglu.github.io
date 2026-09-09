@@ -1,3 +1,64 @@
-< !DOCTYPE html><html><head><meta charset="UTF-8"><title>Berk Oytun Bozo&#287;
-lu</title><link rel="stylesheet" href="styles.css"></head><body><div class="container">< !-- Profile photo --><div class="hero-photo"><img src="photo.jpg" alt="Berk Oytun Bozo&#287;lu"></div>< !-- Name and information --><div class="profile"><div class="profile-info"><h1>Berk Oytun Bozo&#287;
-lu</h1><p>Department of Mathematics<br>University of Bonn<br><a href="mailto:berk.bozoglu@uni-bonn.de">berk.bozoglu AT uni-bonn.de </a></p></div></div><hr><h2>Teaching</h2><h3>Winter Semester 2026–2027</h3><ul><li>Tutor and Helpdesk Tutor for Linear Algebra 1 (Prof. Dr. Valentin Blomer) </li></ul><h3>Summer Semester 2026</h3><ul><li><a href="pages/LA2Rep-2026.html">Linear Algebra 2 Repetitorium </a></li><li>Tutor and Helpdesk Tutor for Linear Algebra 2 (Prof. Dr. Lisa Sauermann) </li></ul><h3>Winter Semester 2025–2026</h3><ul><li>Linear Algebra 1 Repetitorium</li><li>Tutor and Helpdesk Tutor for Linear Algebra 1 (Prof. Dr. Lisa Sauermann) </li></ul><h3>Summer Semester 2025</h3><ul><li>Helpdesk Tutor for Analysis 2 (Prof. Dr. Barbara Niethammer) </li></ul><h3>Winter Semester 2024–2025</h3><ul><li>Helpdesk Tutor for Analysis 1 (Prof. Dr. Barbara Niethammer) </li></ul></div></body></html>
+body {
+  font-family: Georgia, serif;
+  background: white;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Profile photo */
+
+.hero-photo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-photo img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+/* Profile information */
+
+.profile {
+  margin-bottom: 25px;
+}
+
+.profile-info h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 30px 0;
+}

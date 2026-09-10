@@ -18,17 +18,10 @@ body {
 }
 
 .hero-photo img {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   display: block;
-}
-
-@media (max-width: 600px) {
-  .hero-photo img {
-    width: 220px;
-    height: 220px;
-  }
 }
 
 /* Profile information */
@@ -44,11 +37,6 @@ body {
 
 h1 {
   font-size: 32px;
-}
-
-.subtitle {
-  font-style: italic;
-  margin-bottom: 20px;
 }
 
 h2 {

@@ -18,16 +18,16 @@ body {
 }
 
 .hero-photo img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   display: block;
 }
 
 @media (max-width: 600px) {
   .hero-photo img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 }
 

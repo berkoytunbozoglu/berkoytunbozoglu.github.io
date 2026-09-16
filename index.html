@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Berk Oytun Bozo&#287;lu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Berk Oytun Bozoğlu</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,81 +14,90 @@
 
   <div class="container">
 
-    <!-- Profile photo -->
-    <div class="hero-photo">
-      <img src="berk.jpg" alt="Berk Oytun Bozo&#287;lu">
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
 
-    <!-- Name and information -->
-    <div class="profile">
-      <div class="profile-info">
+      <a href="index.html" class="site-name">
+        Berk Oytun Bozoğlu
+      </a>
 
-        <h1>Berk Oytun Bozo&#287;lu</h1>
+      <div class="nav-links">
 
-        <p>
-          Department of Mathematics<br>
-          University of Bonn<br>
-          <a href="mailto:berk.bozoglu@uni-bonn.de">
-            berk.bozoglu AT uni-bonn.de
-          </a>
-        </p>
+        <a href="index.html">Home</a>
+
+        <a href="teaching.html">Teaching</a>
+
+        <a href="research.html">Research</a>
+
+        <a href="expository.html" class="active">
+          Expository Writing
+        </a>
+
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          ☾
+        </button>
 
       </div>
-    </div>
 
-    <hr>
+    </nav>
 
-    <h2>Teaching</h2>
 
-    <h3>Winter Semester 2026–2027</h3>
-    <ul>
-      <li>
-        Tutor and Helpdesk Tutor for Linear Algebra 1
-        (Prof. Dr. Valentin Blomer)
-      </li>
-    </ul>
+    <!-- Profile -->
+    <main>
 
-    <h3>Summer Semester 2026</h3>
-    <ul>
-      <li>
-        <a href="pages/LA2Rep-2026.html">
-          Linear Algebra 2 Repetitorium
-        </a>
-      </li>
-      <li>
-        Tutor and Helpdesk Tutor for Linear Algebra 2
-        (Prof. Dr. Lisa Sauermann)
-      </li>
-    </ul>
+      <div class="profile">
 
-    <h3>Winter Semester 2025–2026</h3>
-    <ul>
-      <li>Linear Algebra 1 Repetitorium</li>
-      <li>
-        Tutor and Helpdesk Tutor for Linear Algebra 1
-        (Prof. Dr. Lisa Sauermann)
-      </li>
-    </ul>
+        <div class="hero-photo">
+          <img src="berk.jpg" alt="Berk Oytun Bozoğlu">
+        </div>
 
-    <h3>Summer Semester 2025</h3>
-    <ul>
-      <li>
-        Helpdesk Tutor for Analysis 2
-        (Prof. Dr. Barbara Niethammer)
-      </li>
-    </ul>
+        <div class="profile-info">
 
-    <h3>Winter Semester 2024–2025</h3>
-    <ul>
-      <li>
-        Helpdesk Tutor for Analysis 1
-        (Prof. Dr. Barbara Niethammer)
-      </li>
-    </ul>
+          <h1>Berk Oytun Bozoğlu</h1>
+
+          <p>
+            Department of Mathematics<br>
+            University of Bonn<br>
+
+            <a href="mailto:berk.bozoglu@uni-bonn.de">
+              berk.bozoglu AT uni-bonn.de
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <hr>
+
+
+      <!-- About -->
+      <section>
+
+        <h2>About</h2>
+
+        <p>
+          I am a mathematics student at the University of Bonn.
+          My interest lies in Arithmetic Geometry.
+          In my free time I like to play the drums and go climbing.
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      © 2026 Berk Oytun Bozoğlu
+    </footer>
 
   </div>
+
+
+  <!-- Dark mode -->
+  <script src="script.js"></script>
 
 </body>
 
 </html>
-```

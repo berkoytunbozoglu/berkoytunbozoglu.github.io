@@ -3,15 +3,93 @@ body {
   background: white;
   color: #111;
   line-height: 1.6;
+  margin: 0;
+
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .container {
   max-width: 700px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Profile photo */
+
+/* =========================
+   Top navigation
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.site-name {
+  color: #111;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #0645ad;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links a.active {
+  color: #111;
+  font-weight: bold;
+}
+
+
+/* =========================
+   Dark mode button
+========================= */
+
+#theme-toggle {
+  background: none;
+  border: none;
+
+  color: #0645ad;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+#theme-toggle:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Profile photo
+========================= */
 
 .hero-photo {
   margin-bottom: 25px;
@@ -20,11 +98,15 @@ body {
 .hero-photo img {
   width: 300px;
   height: 300px;
+
   object-fit: cover;
   display: block;
 }
 
-/* Profile information */
+
+/* =========================
+   Profile information
+========================= */
 
 .profile {
   margin-bottom: 25px;
@@ -44,6 +126,11 @@ h2 {
   font-size: 20px;
 }
 
+
+/* =========================
+   Links
+========================= */
+
 a {
   color: #0645ad;
   text-decoration: none;
@@ -53,6 +140,106 @@ a:hover {
   text-decoration: underline;
 }
 
+
+/* =========================
+   Horizontal line
+========================= */
+
 hr {
   margin: 30px 0;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+
+/* Navigation */
+
+body.dark .navbar {
+  border-bottom-color: #333;
+}
+
+body.dark .site-name {
+  color: #eee;
+}
+
+body.dark .nav-links a {
+  color: #7da7e8;
+}
+
+body.dark .nav-links a.active {
+  color: #eee;
+}
+
+
+/* Theme button */
+
+body.dark #theme-toggle {
+  color: #7da7e8;
+}
+
+
+/* Links */
+
+body.dark a {
+  color: #7da7e8;
+}
+
+
+/* Horizontal lines */
+
+body.dark hr {
+  border-color: #333;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    margin: 25px auto;
+    padding: 0 15px;
+  }
+
+  .navbar {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .site-name {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  #theme-toggle {
+    font-size: 16px;
+  }
+
+  .hero-photo img {
+    width: 220px;
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }

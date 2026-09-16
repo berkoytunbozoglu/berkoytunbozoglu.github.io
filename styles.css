@@ -16,7 +16,7 @@ body {
 
 
 /* =========================
-   Top navigation
+   Navigation
 ========================= */
 
 .navbar {
@@ -36,6 +36,8 @@ body {
 
   font-size: 18px;
   font-weight: bold;
+
+  white-space: nowrap;
 }
 
 .site-name:hover {
@@ -45,13 +47,18 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: flex-end;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   color: #0645ad;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -75,7 +82,7 @@ body {
   color: #0645ad;
 
   font-family: Georgia, serif;
-  font-size: 18px;
+  font-size: 17px;
 
   cursor: pointer;
 
@@ -105,7 +112,7 @@ body {
 
 
 /* =========================
-   Profile information
+   Profile
 ========================= */
 
 .profile {
@@ -126,6 +133,10 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 
 /* =========================
    Links
@@ -142,25 +153,49 @@ a:hover {
 
 
 /* =========================
+   Lists
+========================= */
+
+ul {
+  padding-left: 25px;
+}
+
+
+/* =========================
    Horizontal line
 ========================= */
 
 hr {
   margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ddd;
 }
 
 
 /* =========================
-   DARK THEME
+   Footer
+========================= */
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  border-top: 1px solid #ddd;
+
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Dark theme
 ========================= */
 
 body.dark {
   background: #111;
   color: #eee;
 }
-
-
-/* Navigation */
 
 body.dark .navbar {
   border-bottom-color: #333;
@@ -171,32 +206,47 @@ body.dark .site-name {
 }
 
 body.dark .nav-links a {
-  color: #7da7e8;
+  color: #8ab4f8;
 }
 
 body.dark .nav-links a.active {
   color: #eee;
 }
 
-
-/* Theme button */
-
 body.dark #theme-toggle {
-  color: #7da7e8;
+  color: #8ab4f8;
 }
-
-
-/* Links */
 
 body.dark a {
-  color: #7da7e8;
+  color: #8ab4f8;
+}
+
+body.dark hr,
+body.dark footer {
+  border-color: #333;
+}
+
+body.dark footer {
+  color: #999;
 }
 
 
-/* Horizontal lines */
+/* =========================
+   Tablet / smaller screens
+========================= */
 
-body.dark hr {
-  border-color: #333;
+@media (max-width: 750px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
 }
 
 
@@ -204,16 +254,15 @@ body.dark hr {
    Mobile
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
   .container {
     margin: 25px auto;
-    padding: 0 15px;
+    padding: 0 18px;
   }
 
   .navbar {
-    align-items: flex-start;
-    gap: 15px;
+    margin-bottom: 35px;
   }
 
   .site-name {
@@ -221,9 +270,8 @@ body.dark hr {
   }
 
   .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 18px;
+    width: 100%;
+    gap: 10px 16px;
   }
 
   .nav-links a {
@@ -241,5 +289,14 @@ body.dark hr {
 
   h1 {
     font-size: 28px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
   }
 }
